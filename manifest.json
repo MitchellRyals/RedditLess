@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "RedditLess",
+  "version": "0.1",
+
+  "description": "An extension to help reduce and limit your time spent on Reddit.",
+
+  "icons": {
+    "48": "redditLess.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["redditLess.js"]
+    }
+  ]
+
+}
